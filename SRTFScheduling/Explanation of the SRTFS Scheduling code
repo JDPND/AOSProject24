@@ -1,0 +1,23 @@
+The `Processs` class represents a task with an ID, arrival time, burst time (total execution time), and remaining time.
+
+In the main method:
+   - 79 processes are created with random arrival times (0-10) and burst times (1-10).
+
+The `srtfScheduling` method does the scheduling:
+   a. Sort processes by arrival time.
+   b. Initialize variables to keep track of time, completed processes, etc.
+   c. Main scheduling loop:
+      - Find the process with the shortest remaining time that has arrived.
+      - If no process is available, increase time and continue.
+      - Reduce the remaining time of the selected process by 1.
+      - If a process completes:
+        * Mark it as complete.
+        * Calculate its waiting time and turnaround time.
+      - Increase current time by 1.
+   d. After all processes complete, calculate average waiting and turnaround times.
+
+The algorithm prioritizes processes with the shortest remaining time at each step, potentially interrupting running processes if a shorter one arrives.
+
+Finally, it prints details for each process and the average waiting and turnaround times.
+
+This SRTF algorithm aims to minimize average waiting time by always working on the process that will finish soonest.
