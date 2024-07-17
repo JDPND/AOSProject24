@@ -1,0 +1,29 @@
+The NoOfProcess class:
+Represents a process with a name, burst time (execution time), and priority.
+
+Main method:
+Creates 79 processes (P1 to P79).
+Each process has:
+Random burst time between 1 and 10
+Random priority between 1 and 10
+
+The priorityScheduling method:
+Sorts processes by priority (lower number = higher priority).
+Processes them in order of priority.
+
+For each process:
+Calculates waiting time (time spent waiting before execution starts).
+Calculates turnaround time (total time from arrival to completion).
+Updates the current time.
+Prints process details.
+
+After processing all processes:
+Calculates and prints average waiting time.
+Calculates and prints average turnaround time.
+
+The algorithm assumes:
+All processes arrive at the same time.
+Lower priority number means higher priority.
+Once a process starts, it runs to completion (non-preemptive).
+
+This Priority Scheduling aims to execute higher priority processes first, potentially at the cost of longer waiting times for lower priority processes. 
