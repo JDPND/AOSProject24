@@ -1,0 +1,28 @@
+Setup:
+We have 79 processes (P1, P2, ..., P79).
+Each process has a burst time (execution time) between 1 and 10.
+
+Main Algorithm:
+Processes are executed in the order they arrive (P1 first, then P2, and so on).
+No process is interrupted once it starts executing.
+
+Time Calculations:
+  Waiting time for each process:
+    For the first process (P1): 0
+    For others: Sum of burst times of all previous processes
+  Turnaround time for each process:
+    Waiting time + Its own burst time
+
+Output:
+  For each process, it prints:
+    Process name
+    Burst time
+    Waiting time
+    Turnaround time
+
+Average Times:
+  Calculates and prints:
+    Average waiting time
+    Average turnaround time
+
+The FCFS algorithm is simple: it processes tasks in the exact order they arrive.
