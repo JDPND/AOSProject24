@@ -1,0 +1,29 @@
+Setup:
+We have 79 processes.
+Each process has a name (P1, P2, etc.) and a burst time (1-10).
+The time quantum (the maximum time a process can run at once) is 2.
+
+
+Main Algorithm:
+The algorithm runs in rounds.
+In each round, it goes through all processes:
+If a process still has time left to run:
+  If it needs more than 2 time units, it runs for 2 units and then pauses.
+  If it needs 2 or fewer time units, it completes.
+
+This continues until all processes are finished
+
+Time Calculation:
+Waiting time for a process = Time it finishes - Its total burst time
+Turnaround time = Waiting time + Burst time
+
+Output:
+The code prints details for each process:
+Process name
+Burst time
+Waiting time
+Turnaround time
+
+It then calculates and prints the average waiting time and turnaround time.
+
+The Round Robin algorithm aims to be fair by giving each process a short turn to run, then moving to the next one.
